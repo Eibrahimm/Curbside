@@ -1,0 +1,6 @@
+{
+  "name": "Curbside — City Street-Food Map",
+  "description": "A bold black-and-white interactive street-food map featuring the top 10 local spots, exactly what to order at each, and live text editing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
