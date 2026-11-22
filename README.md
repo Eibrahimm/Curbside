@@ -1,20 +1,60 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Curbside — City Street-Food Map
 
-# Run and deploy your AI Studio app
+A bold, black-and-white interactive city street-food guide featuring the top 10 local spots, exactly what to order at each stand, a customizable crawl planner, and live in-browser guide editing.
 
-This contains everything you need to run your app locally.
+**Live Demo:** https://curbside.embarko.app
 
-View your app in AI Studio: https://ai.studio/apps/14d74d0d-1758-4f16-829e-5b17ad79ae93
+## Features
+
+- **Interactive Curbside Map** — Explore 10 numbered street-food pins on a custom city grid with an optional crawl-path overlay and synced spot inspector.
+- **Time-of-Day & Crawl Filters** — Filter spots by `All 10`, `Morning`, `Midday`, `Late Night`, or `My Crawl`.
+- **Top 10 Spots & Dish Stamps** — Detailed cards for every corner with exact orders, insider notes, quick jump controls, and photography.
+- **Pocket Order Sheet** — A compact checklist for toggling spots on or off your personal crawl.
+- **Live Guide Editor** — Edit spot titles, notes, and guide copy directly inside the app via the built-in editor drawer.
+
+## Tech Stack
+
+- **React 19** + **TypeScript**
+- **Vite 8**
+- **Tailwind CSS v4**
+- **Motion** & **Lucide React**
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js 18+
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Eibrahimm/Curbside.git
+   cd Curbside
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Project Structure
+
+```text
+├── index.html
+├── package.json
+├── vite.config.ts
+└── src/
+    ├── App.tsx
+    ├── components/
+    │   ├── CityMap.tsx
+    │   ├── DishStamp.tsx
+    │   ├── EditGuideDrawer.tsx
+    │   └── SpotCard.tsx
+    ├── data/
+    │   └── streetFoodData.ts
+    └── assets/images/
+```
